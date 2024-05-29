@@ -795,3 +795,152 @@ button:hover {
     padding: 10px 0;
     font-size: 13px;
 }
+/* RESPONSIVE STYLES */
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+    header {
+        padding: 15px 50px;
+    }
+
+    .sticky {
+        padding: 8px 50px;
+    }
+
+    .banner .banner_txt {
+        width: 45%;
+    }
+
+    .shop_category .food .food_items .img {
+        width: 300px;
+    }
+
+    .shop_category .pet_list .single_pet {
+        width: 30%;
+    }
+
+    .featured_product .fp_items {
+        width: 48%;
+    }
+
+    .blog .blog_items {
+        width: 48%;
+    }
+
+    .footer_txt .footer_text .footer_left,
+    .footer_txt .footer_text .footer_right {
+        width: 48%;
+    }
+
+    .subscribe .subscribe_form {
+        width: 70%;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .sticky {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 20px;
+    }
+
+    header .menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .menu ul li {
+        padding: 10px 0;
+    }
+
+    header .header_right {
+        padding-right: 0;
+        padding-top: 15px;
+    }
+
+    .banner .banner_txt {
+        width: 70%;
+    }
+
+    .facility {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .facility .f_item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .shop_category .food {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shop_category .food .food_items {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .shop_category .pet_list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shop_category .pet_list .single_pet {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .featured_product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured_product .fp_items {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .blog {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog .blog_items {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .footer_txt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_txt .footer_text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_txt .footer_text .footer_left,
+    .footer_txt .footer_text .footer_right {
+        width: 90%;
+        text-align: center;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe .subscribe_form {
+        width: 90%;
+    }
+}
