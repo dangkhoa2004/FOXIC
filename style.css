@@ -795,6 +795,7 @@ button:hover {
     padding: 10px 0;
     font-size: 13px;
 }
+
 /* RESPONSIVE STYLES */
 
 /* Tablet styles */
@@ -846,9 +847,12 @@ button:hover {
     }
 
     .sticky {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 8px 20px;
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
+        border-bottom: none;
+        padding: 15px 50px;
+        /* Adjust padding as needed */
     }
 
     header .menu ul {
@@ -942,5 +946,81 @@ button:hover {
 
     .subscribe .subscribe_form {
         width: 90%;
+    }
+
+    .two_banner .img .txt h5 {
+        display: none;
+    }
+
+    .two_banner .img .txt h4 {
+        display: none;
+    }
+}
+
+/* Smaller screens (less than 480px) */
+@media (max-width: 480px) {
+    .two_banner .img .txt h5 {
+        display: none;
+    }
+
+    .two_banner .img .txt h4 {
+        display: none;
+    }
+
+    header {
+        padding: 10px 15px;
+    }
+
+    header .menu ul li {
+        padding: 8px 0;
+    }
+
+    .banner .banner_txt {
+        width: 85%;
+        font-size: smaller;
+    }
+
+    .facility .f_item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .shop_category .food .food_items {
+        width: 100%;
+    }
+
+    .shop_category .pet_list .single_pet {
+        width: 100%;
+    }
+
+    .featured_product .fp_items {
+        width: 100%;
+    }
+
+    .blog .blog_items {
+        width: 100%;
+    }
+
+    .footer_txt .footer_text .footer_left,
+    .footer_txt .footer_text .footer_right {
+        width: 100%;
+    }
+
+    .subscribe .subscribe_form {
+        width: 100%;
+    }
+
+    .facility,
+    .shop_category,
+    .featured_product,
+    .blog,
+    .footer_txt,
+    .subscribe {
+        padding: 0 15px;
+    }
+
+    button {
+        width: 100%;
+        text-align: center;
     }
 }
